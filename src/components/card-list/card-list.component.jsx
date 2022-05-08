@@ -1,6 +1,6 @@
-import { Component } from "react"
+//import { Component } from "react"
 import CardOneMonster from "./card/card.component"
-import Card from "./card/card.component"
+//import Card from "./card/card.component"
 
 /*
 class CardList extends Component {

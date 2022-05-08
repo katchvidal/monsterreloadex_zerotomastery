@@ -57,3 +57,27 @@
     -   UnMounting:
         The componnent not necessary in the view
 ```
+
+##  Upgrade React Dom V17 - V18
+
+```
+    - npm update react react-dom --latest
+    eg. -> Big Change:
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(
+            <React.StrictMode>
+                <AppFunctional />
+            </React.StrictMode>
+        );
+```
+
+##  Re rendering
+
+```
+    Why re rendering is a great solution for React
+    all the components are in the same level inclusive the card have the same container
+    1.  App
+        1.1 Search Bar
+        1.2 Card List
+        1.3 Card One Monster
+```
