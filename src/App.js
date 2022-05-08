@@ -14,13 +14,13 @@ class App extends Component {
     //console.log('Constructor');
     //  You need to initialized a state  ( initial State ) in this case is empty []
     this.state = {
-      monsters: [],  //  Initial Value
-      searchField: ''
+      monsters: [],  //  Initial Value of List Monster
+      searchField: '' //  Term of Search 
     }
   }
 
   componentDidMount() {
-    //console.log( 'componentDidMount' );
+
     fetch('https://jsonplaceholder.typicode.com/users') //  Return a promises
       .then((response) => response.json())
       .then((users) => this.setState(() => { return { monsters: users } }))
@@ -34,7 +34,6 @@ class App extends Component {
 
   render() {
     const { monsters, searchField } = this.state
-    //console.log('Render');
     //  Creando un nuevo Arreglo [Lista] filtrando por el termino de busqueda en el Arreglo original de Monsters
     const selecMonster = monsters.filter(( monster ) => {
       return monster.name.toLocaleLowerCase().includes(searchField)
@@ -42,10 +41,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        
       <h1 className='app-title'> Monster Rolodex </h1>
-
-
         <SearchBox onsearchChange={ this.onsearchChange } />
         <CardList monsters={ selecMonster } />
       </div>

@@ -42,4 +42,18 @@
 ##  Converting this application using Functional Components & Hooks
 ```
     -   The most important Change is how React re-render the bundle
+    -   componentDidMount not working wit a function component
+    -   UseEffects -> Try to Control what happend in the componnent and evit re- render until
+        the state change
+```
+
+
+##  Life ciclyng of Component
+```
+    -   Mount Component:
+        When the component are render in the client
+    -   Update Component:
+        React is charge of show the re render in the client
+    -   UnMounting:
+        The componnent not necessary in the view
 ```
