@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+#   Starting Learning React 2022
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+    npx create-react-app
+    in this point we start doing a monster card app with a bar to search with match name
 
-## Available Scripts
+    1.  React with classes
+    2.  React with Hooks
+    3.  API -> https://jsonplaceholder.typicode.com/users
 
-In the project directory, you can run:
+    Constructor the concepts -> Single Page
+    1.  All the Page
+        1.1 Field Search Input
+        1.2 List of Monsters
 
-### `npm start`
+    The responsability to the componnents throught ( we can reuse a component in differents part of an application )
+    Folder Structure by the Responsability
+    1.  Src
+        1.1 Componennts Folder -> Componnent encapsulate the responsability
+            1.1.1   Card List
+            1.1.2   Search Bar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##  Multiple Class Names
+```
+    -   Passing a parameters trought props parameters 
+```
 
-### `npm test`
+##  Handler CSS in React
+```
+    -   App JS representing the entry point of the entire application -> App JS the only one a unique
+    -   App .CSS is the entirily entry proint of css aplication style.
+    -   When you import a .CSS in any part of the Componnent be Sure not modify any class in other componnent because the css not isolte an one componnent
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  Card Image
+```
+    -   We recived a image from ->  https://robohash.org/${ monster.id }
+```
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##  Converting this application using Functional Components & Hooks
+```
+    -   The most important Change is how React re-render the bundle
+```
